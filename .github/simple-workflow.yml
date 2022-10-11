@@ -1,0 +1,14 @@
+name: 'My first workflow'
+
+on:
+  workflow_dispatch:
+
+
+jobs:
+  #
+  # Job for Linting the codebase
+  myjob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print
+        run: echo "my first workflow..."
